@@ -1,0 +1,7 @@
+datasources:4cc38014d4a510c58ed477c67d5ea00dda7ad842
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:7cf42ed7bfa256db6b17517a7027b8481a63c9c1
+--test TC8.Validate UnSuccesful Login
+--test TC8.Validate cards displayed in validate page
+--test TC8.Fill The Login Details and Login form

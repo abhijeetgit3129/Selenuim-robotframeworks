@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.2 on win32)" generated="2024-03-09T22:37:07.012148" rpa="false" schemaversion="5">
+<suite id="s1" name="TC8" source="C:\Users\awaghmare\PycharmProjects\Robot\Testcases\TC8.robot">
+<test id="s1-t1" name="Validate UnSuccesful Login" line="15">
+<kw name="open the browser with the Mortgage payment url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:37:09.836159" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-03-09T22:37:09.831584" elapsed="15.084983"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:37:25.041515" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-03-09T22:37:24.918572" elapsed="66.707162"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-09T22:38:31.627735" elapsed="0.314446"/>
+</kw>
+<status status="PASS" start="2024-03-09T22:37:09.819645" elapsed="82.123550"/>
+</kw>
+<kw name="Fill the login Form" owner="LandingPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:31.970882" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T22:38:31.958879" elapsed="2.607476"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:34.577565" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-03-09T22:38:36.136315" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T22:38:34.570643" elapsed="2.958442"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:37.536811" level="INFO">Clicking button 'signInBtn'.</msg>
+<arg>signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T22:38:37.532322" elapsed="0.812058"/>
+</kw>
+<arg>${user_name}</arg>
+<arg>${invalid_password}</arg>
+<status status="PASS" start="2024-03-09T22:38:31.948176" elapsed="6.398206"/>
+</kw>
+<kw name="Wait until element is visible on page" owner="LandingPage">
+<kw name="Wait untill Element is located in the page" owner="Generic">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${page_locator}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-09T22:38:38.370808" elapsed="2.121446"/>
+</kw>
+<arg>${Error_Message_Login}</arg>
+<status status="PASS" start="2024-03-09T22:38:38.359388" elapsed="2.134386"/>
+</kw>
+<status status="PASS" start="2024-03-09T22:38:38.351372" elapsed="2.143007"/>
+</kw>
+<kw name="verify error message is correct" owner="LandingPage">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:40.510610" level="INFO">Verifying element 'xpath://div[@class='alert alert-danger col-md-12']' contains exact text 'Incorrect username/password.'.</msg>
+<arg>${Error_Message_Login}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-03-09T22:38:40.504234" elapsed="0.283145"/>
+</kw>
+<status status="PASS" start="2024-03-09T22:38:40.498279" elapsed="0.291774"/>
+</kw>
+<kw name="Close Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-09T22:38:40.800690" elapsed="8.533159"/>
+</kw>
+<status status="PASS" start="2024-03-09T22:38:40.793687" elapsed="8.542201"/>
+</kw>
+<status status="PASS" start="2024-03-09T22:37:09.802960" elapsed="99.532928"/>
+</test>
+<doc>To validate the login from</doc>
+<status status="PASS" start="2024-03-09T22:37:07.130958" elapsed="102.211939"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC8">TC8</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

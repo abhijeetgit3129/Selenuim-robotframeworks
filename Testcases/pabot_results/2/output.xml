@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.2 on win32)" generated="2024-03-09T22:37:06.895113" rpa="false" schemaversion="5">
+<suite id="s1" name="TC8" source="C:\Users\awaghmare\PycharmProjects\Robot\Testcases\TC8.robot">
+<test id="s1-t1" name="Fill The Login Details and Login form" line="30">
+<kw name="open the browser with the Mortgage payment url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:37:09.643231" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-03-09T22:37:09.639229" elapsed="15.999167"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:37:25.646674" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-03-09T22:37:25.640627" elapsed="68.892378"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-09T22:38:34.535730" elapsed="0.422837"/>
+</kw>
+<status status="PASS" start="2024-03-09T22:37:09.629185" elapsed="85.331385"/>
+</kw>
+<kw name="Fill detials and form" owner="LandingPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:34.985617" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T22:38:34.977614" elapsed="2.765379"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:37.750346" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-03-09T22:38:38.115271" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>$learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T22:38:37.745152" elapsed="0.969125"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:38.722676" level="INFO">Clicking element 'xpath://input[@value='user']'.</msg>
+<arg>xpath://input[@value='user']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T22:38:38.716945" elapsed="0.613564"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-09T22:38:39.333220" elapsed="0.953865"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:40.294164" level="INFO">Clicking element 'xpath://button[@id='okayBtn']'.</msg>
+<arg>xpath://button[@id='okayBtn']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T22:38:40.289820" elapsed="1.114851"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2024-03-09T22:38:41.407289" elapsed="0.248722"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:41.665077" level="INFO">Selecting options from selection list 'xpath://select[@class='form-control']' by value consult.</msg>
+<arg>xpath://select[@class='form-control']</arg>
+<arg>consult</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-03-09T22:38:41.659705" elapsed="1.210240"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:42.876343" level="INFO">Selecting checkbox 'terms'.</msg>
+<arg>terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T22:38:42.872040" elapsed="0.786795"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2024-03-09T22:38:43.674192" level="INFO">Verifying checkbox 'terms' is selected.</msg>
+<arg>terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2024-03-09T22:38:43.666831" elapsed="0.493952"/>
+</kw>
+<status status="PASS" start="2024-03-09T22:38:34.966579" elapsed="9.196241"/>
+</kw>
+<kw name="Close Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-09T22:38:44.173838" elapsed="4.882878"/>
+</kw>
+<status status="PASS" start="2024-03-09T22:38:44.165820" elapsed="4.893395"/>
+</kw>
+<status status="PASS" start="2024-03-09T22:37:09.622190" elapsed="99.438021"/>
+</test>
+<doc>To validate the login from</doc>
+<status status="PASS" start="2024-03-09T22:37:07.018594" elapsed="102.048639"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC8">TC8</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

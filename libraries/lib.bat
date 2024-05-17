@@ -1,0 +1,26 @@
+pip install PyMySQL
+pip install PySocks
+pip install http-requests
+pip install importlib-resources
+pip install jsondir
+pip install jsonfig
+pip install jsonpath-ng
+pip install jsonschema
+pip install jsonschema-specifications
+pip install pip
+pip install protobuf-robotframework-requests
+pip install requests
+pip install robotframework
+pip install robotframework-databaselibrary
+pip install robotframework-databaseslibrary
+pip install robotframework-datadriver
+pip install robotframework-excellib
+pip install robotframework-jsonlibrary
+pip install robotframework-oracledb-library
+pip install robotframework-pabot
+pip install robotframework-pythonlibcore
+pip install robotframework-requests
+pip install robotframework-requests-extension
+pip install robotframework-seleniumlibrary
+pip install selenium
+

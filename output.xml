@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.2 on win32)" generated="2024-05-16T18:43:30.970917" rpa="false" schemaversion="5">
+<suite id="s1" name="Elseif" source="C:\Users\awaghmare\PycharmProjects\Robot\Testcases\elseif.robot">
+<test id="s1-t1" name="TC1" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-16T18:43:31.974266" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-16T18:43:31.973211" elapsed="44.613140"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-05-16T18:44:16.629311" level="INFO">${count} = 9</msg>
+<var>${count}</var>
+<arg>//div[@id='SIvCob']//a</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-05-16T18:44:16.588362" elapsed="0.040949"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="key3">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>key3 is running</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-16T18:44:16.632738" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-16T18:44:16.630858" elapsed="0.001880"/>
+</kw>
+<arg>${count}&lt;7</arg>
+<arg>key1</arg>
+<arg>ELSE IF</arg>
+<arg>${count}&gt;10</arg>
+<arg>Key2</arg>
+<arg>ELSE</arg>
+<arg>key3</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-16T18:44:16.630507" elapsed="0.002231"/>
+</kw>
+<status status="PASS" start="2024-05-16T18:43:31.970215" elapsed="44.663747"/>
+</test>
+<status status="PASS" start="2024-05-16T18:43:30.976513" elapsed="45.658510"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Elseif">Elseif</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
